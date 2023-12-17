@@ -1,5 +1,8 @@
 import express from 'express';
 import cors from 'cors';
+import { config as dotenv } from 'dotenv';
+
+dotenv();
 
 const app = express();
 
