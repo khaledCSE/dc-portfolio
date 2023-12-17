@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import mongoose from 'mongoose';
 
-const connectDB = async () => {
+export const connectDB = async () => {
   const url = process.env.MONGO_URI as string;
   await mongoose.connect(url);
 
