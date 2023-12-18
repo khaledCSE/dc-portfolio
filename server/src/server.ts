@@ -4,6 +4,7 @@ import { config as dotenv } from 'dotenv';
 import { connectDB } from './config/db.config';
 import User from './models/User.model';
 import notFoundMiddleware from './middlewares/not-found.middleware';
+import useRouters from './routers';
 
 dotenv();
 
@@ -16,10 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 // * Routes
-app.get('/', async (_, res) => {
-  const users = await User.find();
-  res.json({ success: true, message: 'Hi There!', users: users.length });
-});
+useRouters(app);
 
 app.use('*', notFoundMiddleware);
 
