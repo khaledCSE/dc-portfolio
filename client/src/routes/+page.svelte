@@ -1,4 +1,13 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
+	import { CodeBlock, ProgressRadial } from '@skeletonlabs/skeleton';
+	import type { IindexResponse } from './+page';
+
+	export let data: IindexResponse;
+</script>
+
+<svelte:head>
+	<title>Portfolio Management</title>
+</svelte:head>
 
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-5">
@@ -11,5 +20,11 @@
 				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
 			</li>
 		</ul>
+
+		{#if data}
+			<CodeBlock language="ts" code={JSON.stringify(data, null, 2)}></CodeBlock>
+		{:else}
+			<ProgressRadial value={undefined} />
+		{/if}
 	</div>
 </div>
