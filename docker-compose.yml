@@ -11,6 +11,8 @@ services:
       - ./client:/usr/src/app
     environment:
       - API_BASE=http://dc-portfolio-be:5000/api
+    depends_on:
+      - dc-portfolio-be
   dc-portfolio-be:
     image: dc-portfolio-be
     ports:

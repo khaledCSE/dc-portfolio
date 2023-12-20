@@ -1,12 +1,17 @@
 <script lang="ts">
-	import { AppShell } from '@skeletonlabs/skeleton';
+	import { AppShell, Modal, initializeStores } from '@skeletonlabs/skeleton';
 	import Navbar from '../../lib/components/Navbar.svelte';
 	import Footer from '../../lib/components/Footer.svelte';
 	import Sidebar from '../../lib/components/Sidebar.svelte';
 
+	initializeStores();
+
 	export let user: any;
 </script>
 
+<Modal />
+
+<!-- <AppShell>...</AppShell> -->
 <AppShell slotSidebarLeft="w-52 bg-surface-800/100">
 	<svelte:fragment slot="header">
 		<Navbar {user} />

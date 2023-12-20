@@ -11,12 +11,12 @@
 	</ul>
 	<ul>
 		<li>
+			<a href="/skills">Skills</a>
+		</li>
+	</ul>
+	<ul>
+		<li>
 			<a href="/portfolios">Portfolios</a>
 		</li>
 	</ul>
-	<!-- <ul>
-		<li>
-			<a href="/">Options 2</a>
-		</li>
-	</ul> -->
 </nav>

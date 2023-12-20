@@ -12,7 +12,7 @@ export const actions = {
     const formData = await request.formData()
     const email = formData.get('email')
     const password = formData.get('password')
-    console.log({ email, password });
+    // console.log({ email, password });
 
     try {
       const res = await fetch(`${String(process.env.API_BASE)}/auth/login`, {
