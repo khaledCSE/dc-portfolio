@@ -55,4 +55,20 @@ router.patch('/', protect, async (req: Request, res: Response) => {
   }
 });
 
+router.get('/:id', async (req: Request, res: Response) => {
+  try {
+    const skillId = req.params.id;
+
+    if (!skillId) {
+      res.status(404).json({ success: true, message: 'Project Id is required' });
+      return;
+    }
+    const skills = await Skill.findById(skillId);
+    res.json(skills);
+  } catch (error) {
+    console.error(error);
+    res.status(500);
+  }
+});
+
 export default router;
