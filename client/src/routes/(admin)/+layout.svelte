@@ -12,7 +12,7 @@
 <Modal />
 
 <!-- <AppShell>...</AppShell> -->
-<AppShell slotSidebarLeft="w-52 bg-surface-800/100">
+<AppShell slotSidebarLeft="w-52 bg-surface-600/100">
 	<svelte:fragment slot="header">
 		<Navbar {user} />
 	</svelte:fragment>
