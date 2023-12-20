@@ -8,9 +8,18 @@ dependencies:
   '@floating-ui/dom':
     specifier: 1.5.3
     version: 1.5.3
+  '@fortawesome/free-brands-svg-icons':
+    specifier: ^6.5.1
+    version: 6.5.1
+  '@fortawesome/free-solid-svg-icons':
+    specifier: ^6.5.1
+    version: 6.5.1
   bcryptjs:
     specifier: ^2.4.3
     version: 2.4.3
+  dotenv:
+    specifier: ^16.3.1
+    version: 16.3.1
   highlight.js:
     specifier: 11.9.0
     version: 11.9.0
@@ -79,6 +88,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.6.0
     version: 3.6.0(postcss@8.4.32)(svelte@4.2.7)
+  svelte-fa:
+    specifier: ^3.0.4
+    version: 3.0.4
   tailwindcss:
     specifier: 3.3.6
     version: 3.3.6
@@ -360,6 +372,28 @@ packages:
 
   /@floating-ui/utils@0.1.6:
     resolution: {integrity: sha512-OfX7E2oUDYxtBvsuS4e/jSn4Q9Qb6DzgeYtsAdkPZ47znpoNsMgZw0+tVijiv3uGNR6dgNlty6r9rzIzHjtd/A==}
+    dev: false
+
+  /@fortawesome/fontawesome-common-types@6.5.1:
+    resolution: {integrity: sha512-GkWzv+L6d2bI5f/Vk6ikJ9xtl7dfXtoRu3YGE6nq0p/FFqA1ebMOAWg3XgRyb0I6LYyYkiAo+3/KrwuBp8xG7A==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
+  /@fortawesome/free-brands-svg-icons@6.5.1:
+    resolution: {integrity: sha512-093l7DAkx0aEtBq66Sf19MgoZewv1zeY9/4C7vSKPO4qMwEsW/2VYTUTpBtLwfb9T2R73tXaRDPmE4UqLCYHfg==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.1
+    dev: false
+
+  /@fortawesome/free-solid-svg-icons@6.5.1:
+    resolution: {integrity: sha512-S1PPfU3mIJa59biTtXJz1oI0+KAXW6bkAb31XKhxdxtuXDiUIFsih4JR1v5BbxY7hVHsD1RKq+jRkVRaf773NQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.1
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
@@ -1195,6 +1229,11 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+    engines: {node: '>=12'}
+    dev: false
 
   /electron-to-chromium@1.4.614:
     resolution: {integrity: sha512-X4ze/9Sc3QWs6h92yerwqv7aB/uU8vCjZcrMjA8N9R1pjMFRe44dLsck5FzLilOYvcXuDn93B+bpGYyufc70gQ==}
@@ -2383,6 +2422,10 @@ packages:
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       svelte: 4.2.7
+    dev: true
+
+  /svelte-fa@3.0.4:
+    resolution: {integrity: sha512-y04vEuAoV1wwVDItSCzPW7lzT6v1bj/y1p+W1V+NtIMpQ+8hj8MBkx7JFD7JHSnalPU1QiI8BVfguqheEA3nPg==}
     dev: true
 
   /svelte-hmr@0.15.3(svelte@4.2.7):

@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { CodeBlock, ProgressRadial } from '@skeletonlabs/skeleton';
-	import type { IindexResponse } from './+page';
 
-	export let data: IindexResponse;
+	export let data: any;
 </script>
 
 <svelte:head>
