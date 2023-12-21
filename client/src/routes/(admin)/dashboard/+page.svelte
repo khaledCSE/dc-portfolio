@@ -1,8 +1,12 @@
 <script lang="ts">
+	import Clock from '../../../lib/components/Clock.svelte';
 	export let data: any;
 </script>
 
-<h1 class="h1 my-2">Welcome Back!</h1>
+<div class="flex justify-between">
+	<h1 class="h1 my-2">Welcome Back!</h1>
+	<Clock />
+</div>
 
 <div class="flex gap-5 w-full min-h-[20vh] mb-5">
 	<div class="flex-grow bg-amber-600 rounded-lg p-4 flex flex-col justify-center items-center">
