@@ -12,7 +12,7 @@
 {#if data}
 	<div class="my-5 flex gap-3">
 		{#each data.data as project}
-			<div class="card p-5 max-w-lg">
+			<div class="card p-5 w-[33%]">
 				<header class="card-header">
 					<h3 class="h3">{project.name}</h3>
 				</header>
@@ -28,6 +28,14 @@
 						{/each}
 					</div>
 				</section>
+				<footer class="card-footer flex gap-2 justify-end items-end">
+					<button class="btn variant-filled-warning">
+						<a href={`/projects/${project._id}`}>Edit Project</a>
+					</button>
+					<form action={`/projects/delete/${project._id}`} method="get">
+						<button type="submit" class="btn variant-filled-error">Delete Project</button>
+					</form>
+				</footer>
 			</div>
 		{/each}
 	</div>

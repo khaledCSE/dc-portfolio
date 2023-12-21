@@ -22,4 +22,8 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+<svelte:head>
+	<title>Portfolio Management</title>
+</svelte:head>
+
 <slot />
