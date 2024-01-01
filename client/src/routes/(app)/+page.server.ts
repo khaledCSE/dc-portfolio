@@ -9,7 +9,7 @@ export interface IindexResponse {
 export async function load(event: LoadEvent) {
   const { fetch } = event
   try {
-    const res = await fetch('http://dc-portfolio-be:5000')
+    const res = await fetch(`${process.env.API_BASE}/projects`)
     const data: IindexResponse = await res.json()
     return { resp: data }
   } catch (error) {
