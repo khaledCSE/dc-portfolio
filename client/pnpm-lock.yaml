@@ -88,9 +88,6 @@ devDependencies:
   svelte-check:
     specifier: ^3.6.0
     version: 3.6.0(postcss@8.4.32)(svelte@4.2.7)
-  svelte-fa:
-    specifier: ^3.0.4
-    version: 3.0.4
   svelte-multiselect:
     specifier: ^10.2.0
     version: 10.2.0
@@ -2425,10 +2422,6 @@ packages:
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       svelte: 4.2.7
-    dev: true
-
-  /svelte-fa@3.0.4:
-    resolution: {integrity: sha512-y04vEuAoV1wwVDItSCzPW7lzT6v1bj/y1p+W1V+NtIMpQ+8hj8MBkx7JFD7JHSnalPU1QiI8BVfguqheEA3nPg==}
     dev: true
 
   /svelte-hmr@0.15.3(svelte@4.2.7):

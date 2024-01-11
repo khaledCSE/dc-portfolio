@@ -1,7 +1,4 @@
 <script lang="ts">
-	import Fa from 'svelte-fa';
-	import { faWarning } from '@fortawesome/free-solid-svg-icons';
-
 	interface IError {
 		success: boolean;
 		message: string;
@@ -13,9 +10,6 @@
 	<div class="card p-4 max-w-md m-auto">
 		{#if error}
 			<div class="alert variant-outline-error">
-				<div>
-					<Fa icon={faWarning} />
-				</div>
 				<div class="alert-message">
 					<p>{error.message}</p>
 				</div>

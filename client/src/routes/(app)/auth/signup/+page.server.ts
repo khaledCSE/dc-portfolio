@@ -17,8 +17,8 @@ export const actions = {
         }
       })
 
-      await res.json()
-      // console.log(data);
+      const data = await res.json()
+      console.log(data);
 
       return {
         message: 'Successfully Signed Up! Please Login'
